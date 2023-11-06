@@ -154,5 +154,6 @@ export function ChatWindow(props: {
       </form>
       <ToastContainer />
     </div>
+
   );
 }

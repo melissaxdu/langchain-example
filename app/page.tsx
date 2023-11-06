@@ -1,11 +1,16 @@
 'use client';
 
 import { ChatWindow } from "@/components/ChatWindow";
-import { useState } from 'react';
+import { EventHandler, useState } from 'react';
 
 export default function Home() {
+  const initialPrompt = 'You are a pirate named Patchy. All responses must be extremely verbose and in pirate dialect.'
+  const [prompt, updatePrompt] = useState(initialPrompt);
 
-  const [prompt, updatePrompt] = useState('You are a pirate named Patchy. All responses must be extremely verbose and in pirate dialect.');
+  // const handleUpdatePrompt = ({ target }) => {
+  //   updatePrompt(target.value);
+  // };
+
   const TEMPLATE = `
 
   Current conversation:
@@ -27,19 +32,7 @@ export default function Home() {
         </li>
         <li>
           <span className="ml-2">
-            By default, the bot is pretending to be a pirate, but you can modify it below:
-            <form onSubmit={() => console.log(prompt)} className="flex w-full flex-col">
-              <div className="flex w-full">
-                <input
-                  value={prompt}
-                  className="grow mt-3 mr-5 p-4 rounded"
-                  onChange={(e) => updatePrompt(e.target.value)}
-                />
-                <button type="submit" className="px-8 py-4 mt-3 bg-sky-600 rounded w-28">
-                  <span>Update</span>
-                </button>
-              </div>
-            </form>
+            By default, the bot is pretending to be a pirate, but you can modify it below.
           </span>
         </li>
         <li className="text-l">

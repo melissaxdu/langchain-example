@@ -7,24 +7,6 @@ export default function AgentsPage() {
         ▲ Retrieval Agent
       </h1>
       <ul>
-        {/* <li className="hidden text-l md:block">
-          🤝
-          <span className="ml-2">
-            This template showcases a{" "}
-            <a href="https://js.langchain.com/" target="_blank">
-              LangChain.js
-            </a>{" "}
-            retrieval chain and the Vercel{" "}
-            <a href="https://sdk.vercel.ai/docs" target="_blank">
-              AI SDK
-            </a>{" "}
-            in a{" "}
-            <a href="https://nextjs.org/" target="_blank">
-              Next.js
-            </a>{" "}
-            project.
-          </span>
-        </li> */}
         <li className="hidden text-l md:block">
           <span className="ml-2">
             The agent has access to a vector store retriever as a tool as well
