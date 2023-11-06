@@ -4,10 +4,10 @@ export default function AgentsPage() {
   const InfoCard = (
     <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-scroll">
       <h1 className="text-3xl md:text-4xl mb-4">
-        ▲ Next.js + LangChain.js Retrieval Chain 🦜🔗
+        ▲ Retrieval Chain
       </h1>
       <ul>
-        <li className="hidden text-l md:block">
+        {/* <li className="hidden text-l md:block">
           🔗
           <span className="ml-2">
             This template showcases how to perform retrieval with a{" "}
@@ -24,7 +24,7 @@ export default function AgentsPage() {
             </a>{" "}
             project.
           </span>
-        </li>
+        </li> */}
         <li className="hidden text-l md:block">
           🪜
           <span className="ml-2">The chain works in two steps:</span>
@@ -46,13 +46,13 @@ export default function AgentsPage() {
             </li>
           </ul>
         </li>
-        <li className="hidden text-l md:block">
+        {/* <li className="hidden text-l md:block">
           💻
           <span className="ml-2">
             You can find the prompt and model logic for this use-case in{" "}
             <code>app/api/chat/retrieval/route.ts</code>.
           </span>
-        </li>
+        </li> */}
         <li>
           🐶
           <span className="ml-2">
@@ -60,7 +60,7 @@ export default function AgentsPage() {
             can change the prompt to whatever you want!
           </span>
         </li>
-        <li className="text-l">
+        {/* <li className="text-l">
           🎨
           <span className="ml-2">
             The main frontend logic is found in{" "}
@@ -87,7 +87,7 @@ export default function AgentsPage() {
             Before running this example on your own, you&apos;ll first need to
             set up a Supabase vector store. See the README for more details.
           </span>
-        </li>
+        </li> */}
         <li className="text-l">
           👇
           <span className="ml-2">

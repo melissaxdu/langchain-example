@@ -4,10 +4,10 @@ export default function AgentsPage() {
   const InfoCard = (
     <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden">
       <h1 className="text-3xl md:text-4xl mb-4">
-        ▲ Next.js + LangChain.js Structured Output 🦜🔗
+        ▲ Structured Output
       </h1>
       <ul>
-        <li className="text-l">
+        {/* <li className="text-l">
           🧱
           <span className="ml-2">
             This template showcases how to output structured responses with a{" "}
@@ -24,7 +24,7 @@ export default function AgentsPage() {
             </a>{" "}
             project.
           </span>
-        </li>
+        </li> */}
         <li>
           ☎️
           <span className="ml-2">
@@ -32,13 +32,13 @@ export default function AgentsPage() {
             Functions model, then parses the output.
           </span>
         </li>
-        <li className="hidden text-l md:block">
+        {/* <li className="hidden text-l md:block">
           💻
           <span className="ml-2">
             You can find the prompt, model, and schema logic for this use-case
             in <code>app/api/chat/structured_output/route.ts</code>.
           </span>
-        </li>
+        </li> */}
         <li className="hidden text-l md:block">
           📊
           <span className="ml-2">
@@ -60,7 +60,7 @@ export default function AgentsPage() {
             too.
           </span>
         </li>
-        <li className="hidden text-l md:block">
+        {/* <li className="hidden text-l md:block">
           🎨
           <span className="ml-2">
             The main frontend logic is found in{" "}
@@ -80,7 +80,7 @@ export default function AgentsPage() {
             </a>
             !
           </span>
-        </li>
+        </li> */}
         <li className="text-l">
           👇
           <span className="ml-2">
