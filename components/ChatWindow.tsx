@@ -16,6 +16,7 @@ export function ChatWindow(props: {
   endpoint: string,
   emptyStateComponent: ReactElement,
   placeholder?: string,
+  prompt?: string,
   titleText?: string,
   emoji?: string;
   showIngestForm?: boolean,
